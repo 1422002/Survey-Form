@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+    </header>
+    <form id="survey-form">
+      <fieldset>
+      <label id="first-name-label">
+        First Name
+        <input id="first-name" type="text" placeholder="Enter your first-name" require>
+      </label>
+      <label id="last-name-label">
+        Last Name
+        <input id="last-name" type="text" placeholder="Enter your last-name" require>
+      </label>
+      <label id="email-label">
+        Email
+        <input id="email" type="email"  placeholder="Enter your Email" require="true">
+      </label>
+      <label id="number-label">
+        Age
+        <input id="number" type="number" placeholder="Enter your Age" min="1" max="9">
+      </label>
+      <label id="phone-number-label">
+        Phone Number
+        <input id="phone-number" type="number" placeholder="Enter your Phone Number" min="1" max="9">
+      </label>
+      <label>
+        Which Techical Course Your Good at?
+        <select id="dropdown">
+          <option>Select the language</option>
+          <option>C</option>
+          <option>C++</option>
+          <option>Python</option>
+          <option>Java</option>
+        </select>
+      </label>
+      <label>
+        What is Your Higher Qualification?
+        <select id="dropdown">
+          <option>Select Your Qualification</option>
+          <option>Graduate</option>
+          <option>Post Graduate</option>
+        </select>
+      </label>
+      <label>
+        Any Past experiences in other Organizations?
+        <select id="dropdown">
+            <option>Select Your Experience</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+
+      </label>
+      </fieldset>
+      <fieldset>
+      Languages You are Good at?
+      <label><input type="checkbox" name="improve" value="Front-end">Telugu</label>
+      <label><input type="checkbox" name="improve" value="Back-end">Hindi</label>
+      <label><input type="checkbox" name="improve" value="Data">English</label>
+      <label>Others:<input type="text" name="others"></label>
+      </fieldset>
+
+      <input id="submit" type="submit" value="Submit">
+      
+    </form>
+    
+  </body>
+</html>
